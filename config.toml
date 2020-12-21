@@ -1,0 +1,26 @@
+baseURL = "https://heliofrota.dev"
+languageCode = "en-us"
+title = " blog"
+theme = "hugo-theme-m10c"
+paginate = 5
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+
+[params]
+  author = "Helio Frota"
+  description = "I'll try hard to not delete this."
+  menu_item_separator = " - "
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/helio-frota"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/heliofrota_"
