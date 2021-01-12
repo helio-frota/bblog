@@ -4,10 +4,10 @@ date: 2021-01-11T10:41:42-03:00
 draft: false
 ---
 
-# Running Kafka on CRC and Ubuntu 20.04
+> Note: CRC version 4.6.6
 
-
-> CRC version 4.6.6
+> This post is based on [this blog post](https://medium.com/@osamaahmedtahir17/configure-and-run-kafka-on-local-openshift-cluster-through-code-ready-container-windows-part-2-7c4078a12dfa), 
+but for Ubuntu 20.04 and with the minimal steps/content required to run as possible.
 
 ```
 crc start -m 20000 -c 6
@@ -28,7 +28,7 @@ oc apply -f 'https://strimzi.io/install/latest?namespace=nodejs-kafka'
 
 Create a file kafka.yaml with the following content:
 
-```
+```yml
 apiVersion: kafka.strimzi.io/v1beta1
 kind: Kafka
 namespace: nodejs-kafka
